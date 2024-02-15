@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2>JavaScipt HTML DOM</h2>
+        <p>Remove Child element</p>
+
+        <div id="div1">
+            <p id="p1">This is a para</p>
+            <p id="p2">This is a another para</p>
+        </div>
+
+        <script>
+            const parent = document.getElementById("div1");
+            const child = document.getElementById("p2");
+            parent.removeChild(child);
+        </script>
+    </body>
+</html>

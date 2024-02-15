@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>The Element Object</h1>
+        <h2>The setAttribute() Method</h2>
+
+        <input id="okInput" value="OK">
+        <p>Click "change" to change the input field to input button</p>
+        <button onclick="myFunction()">Change</button>
+
+        <script>
+            function myFunction(){
+                document.getElementById("okInput").setAttribute("type", "button");
+            }
+        </script>
+    </body>
+</html>

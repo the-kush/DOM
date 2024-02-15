@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>The Element Object</h1>
+        <h2>The replaceChild() Method</h2>
+
+        <ul id="myList">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        <p>Click "Replace" to replace the second item from the list</p>
+        <button onclick="myFunction()">Replace</button>
+        <p>This example replaces the text node "Tea" with the text node "Juice", replacing the entire list is also an alternating approach</p>
+        <script>
+            function myFunction() {
+                const element = document.getElementById("myList").children[1];
+                const newNode = document.createTextNode("Juice");
+                element.replaceChild(newNode, element.childNodes[0]);
+            }
+        </script>
+    </body>
+</html>

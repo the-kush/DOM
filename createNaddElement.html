@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html>
+    <body>
+
+        <h1>The Document Object</h1>
+        <h2>The Create Element Method</h2>
+
+        <p>Create a p element and append it to "myDiv".</p>
+
+        <div id="myDiv" style="padding: 19px; background-color:lightgray">
+            <h3>A DIV Element</h3>
+        </div>
+
+        <script>
+            // create an element
+            const para = document.createElement("p");
+            para.innerHTML = "This is a new paragraph.";
+
+            // append to another element
+            document.getElementById("myDiv").appendChild(para);
+        </script>
+    </body>
+</html>

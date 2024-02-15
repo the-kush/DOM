@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JavaScript addEventListener</h2>
+        <p>This example uses the addEventListener() method to execute a function when a user click on a button</p>
+
+        <button id="myBtn">Try it</button>
+
+        <script>
+            var x = document.getElementById('myBtn');
+            x.addEventListener('click', myFunction);
+            x.addEventListener('click', someOtherFunction);
+
+            function myFunction(){
+                alert('Hello World')
+            }
+
+            function someOtherFunction() {
+                alert("Other function was called")
+            }
+        </script>
+    </body>
+</html>

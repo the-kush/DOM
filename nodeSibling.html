@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="list">
+            <h2 class="title">Items</h2>
+            <ul class="items">
+                <li class="item">Item 1</li>
+                <li class="item">Item 2</li>
+                <li class="item">Item 3</li>
+            </ul>
+            <p>Hello WOrld</p>
+        </div>
+
+        <script>
+            const ul = document.querySelector(".items");
+
+            console.log(ul.parentNode)
+            ul.parentNode.style.color = "red";
+
+            // childnode
+            console.log(ul.childNodes[1]);
+            console.log(ul.previousElementSibling);
+        </script>
+    </body>
+</html>
